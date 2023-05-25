@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignas Kilkius</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="navbar">
+            <span class="sideMenu">
+                <a href="#">
+                    <p style="color: #fff;" id="open" onclick="openSideMenu()">&#9776;</p>
+                </a>
+            </span>
+            <ul id="navbarNav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#myprojects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="sideMenu" class="sideNav">
+            <a href="#" style="color: #fff;" class="close" onclick="closeSideMenu()">&times;</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#myprojects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+
+        <section id="home">
+            <p>Hi there, I'm</p>
+            <h1>Ignas Kilkius</h1>
+            <p>I'm a Web Developer</p>
+        </section>
+
+        <section id="about">
+            <h2 class="intro">A little bit about me...</h2>
+            <div class="content">
+                <p class="bio">Hi my name is Ignas, I am a web developer based in Lisbon, Portugal. Over the last 3 years of programming I have created various websites and programs using a variety of programming languages. My current skill set is: HTML | CSS | Javascript | Python</p>
+                <img src="images/ignas.jpg" alt="me" class="me">
+            </div>
+        </section>
+
+        <section id="myprojects">
+            <h2>Check out my Projects...</h2>
+            <div id="projects">
+                <div class="project one"><a href="projects/Steven and Jason ltd/index.html" target="_blank"><img src="projects/Steven and Jason ltd/Images/screen.png"></a></div>
+                <div class="project two"><a href="projects/BBC News clone/index.html" target="_blank"><img src="projects/BBC News clone/images/tn.png"></a></div>
+                <div class="project three" ><a href="projects/JS reaction test/index.html" target="_blank"><img src="projects/JS reaction test/images/logo.png"></a></div>
+                <div class="project four"><a href="projects/JS pong/index.html" target="_blank"><img src="projects/JS pong/logo.png"></a></div>
+                
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <h2>Want to contact me?</h2>
+            <p>If you have a website that needs to be built, want to discuss a project or just want to chat about tech, contact me using the form below</p>
+            <form action="https://formsubmit.co/ignaskilkius@gmail.com" method="POST" id="contact_form">
+                <input type="text" name="name" placeholder="Please enter your name" required>
+                <input type="text" name="email" placeholder="And your email address?" required>
+                <textarea name="Message" placeholder="Message..."></textarea><br>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://ignaskilkius.com/thanks.html">
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+    </div>
+
+<script type="text/javascript" src="script/script.js">
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,222 @@
+body{    
+    font: 15px/1.5 arial, helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/*Global*/
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height: 38px;
+    background: #2dc3ce;
+    border: 0;
+    padding: 0 20px;
+    color: #fff;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.button_1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    
+
+}
+
+.button_1:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.dark{
+    padding: 15px;
+    background: rgb(53, 66, 74);
+    color: #fff;
+    margin: 10px 0;
+}
+
+/*Header*/
+header{
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+    background-color: #35424a;
+    color: #ffffff;
+    padding-top: 5px;
+    min-height: 30px;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+    font-size: 20px;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #2dc3ce;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #ccc;
+    transition: 0.5s;
+}
+
+/*Showcase*/
+
+#showcase{
+    min-height: 400px;
+    background: url('../Images/showcase.jpg') no-repeat center center/ cover;
+    text-align: center;
+    color: #fff;
+}
+    
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    }
+
+#showcase p{
+    font-size: 20px;
+}
+
+#ourServices{
+    text-align: center;
+    position: relative;
+    right: 15px;
+    height: 100px;
+}
+
+/*Boxes*/
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 200px;
+    height: 130px;
+}
+
+
+/*Sidebar*/
+aside#sidebar{
+    padding-top: 60px;
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+article#main-col{
+    padding-top: 60px;
+    float: left;
+    width: 65%;
+}
+
+aside img{
+    width: 100%;
+}
+
+/*Services*/
+
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #ccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+footer{
+    padding: 5px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #35424a;
+    text-align: center;
+}
+
+/*Media queries*/
+
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+  
+    
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase{
+        padding-top: 140px;
+    } 
+    
+    #showcase h1{
+        margin-top: 40px;
+        font-size: 30px;
+    } 
+
+    .page-title{
+        margin-top: 30px;
+    }
+
+    #ourServices p{
+        margin: 0 20px;
+    }
+    }
