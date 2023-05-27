@@ -218,7 +218,9 @@ section#contact{
     margin-top: 20px;
 }
 
-.project{
+
+
+/* .project{
     width: 230px;
     height: 140px;
     background-color: #fff;
@@ -237,6 +239,28 @@ section#contact{
 #projects{
     display: grid;
     grid-template-columns: auto auto;
+} */
+
+.project_items{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: #fff;
+    width: 220px;
+    height: 400px;
+    margin: 10px;
+}
+
+.card_img{
+    background-color: aqua;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.card_1{
+    background-image: url('/images/bbc.png');
 }
 
 @media(max-width:756px){
@@ -244,7 +268,7 @@ section#contact{
     #open{float: left;}
     .intro{margin-top: 60px;}
     .content{display: flex; flex-direction: column;}
-    #projects{display: flex; flex-direction: column; margin-bottom: 60px;}
+    /*#projects{display: flex; flex-direction: column; margin-bottom: 60px;}*/
 
 }
 
